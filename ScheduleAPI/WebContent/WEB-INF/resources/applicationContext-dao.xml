@@ -12,7 +12,4 @@
      http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
      http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
-	<bean id="policyHeaderDao" class="com.standard.api.dao.PolicyHeaderDaoImpl">
-	    <property name="sessionFactory" ref="sessionFactory"/>
-	</bean>
 </beans>

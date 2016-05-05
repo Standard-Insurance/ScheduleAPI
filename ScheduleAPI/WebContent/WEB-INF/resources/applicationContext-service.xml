@@ -15,8 +15,5 @@
      http://www.springframework.org/schema/util
 	 http://www.springframework.org/schema/util/spring-util-2.5.xsd">
 
-	<bean id="policyHeaderService" class="com.standard.api.service.PolicyHeaderServiceImpl">
-	    <property name="policyHeaderDao" ref="policyHeaderDao"/>
-	</bean>
 	
 </beans>

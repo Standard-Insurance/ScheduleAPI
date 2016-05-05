@@ -31,17 +31,5 @@
 	</mvc:cors>
 
 	
-	<bean id="documentationController" class="org.jsondoc.springmvc.controller.JSONDocController">
-		<constructor-arg name="version" value="1.0" />
-		<constructor-arg name="basePath" value="/iWebAPI/api" />
-		<constructor-arg name="packages">
-		  <list>
-			<value>com.standard.api.controller</value> <!-- packages in which you have your spring controllers -->
-			<value>com.standard.api.model</value> <!-- packages in which you have your objects -->
-		  </list>
-		</constructor-arg>
-		<property name="playgroundEnabled" value="true" /> <!-- optional -->
-		<property name="displayMethodAs" value="URI" /> <!-- optional -->
-	</bean>
 
 </beans>
