@@ -5,6 +5,16 @@ public class Member
 	private String name;
 	private String task;
 
+	public Member() { }
+	
+	public Member(String name, String task)
+	{
+		super();
+		this.name = name;
+		this.task = task;
+	}
+
+
 	public String getName()
 	{
 		return name;

@@ -14,8 +14,8 @@
 	<!-- the application context definition for the springapp DispatcherServlet -->
 	<mvc:annotation-driven />
 	<context:annotation-config />
-	<context:component-scan base-package="com.standard.api.controller" />
-
+	<context:component-scan base-package="org.irm.sched" />
+	
 	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
 	
 		<property name="defaultViews">
@@ -29,7 +29,6 @@
 	<mvc:cors>
 		<mvc:mapping path="/**" />
 	</mvc:cors>
-
 	
 
 </beans>

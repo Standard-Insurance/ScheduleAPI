@@ -1,21 +1,32 @@
 package org.irm.sched.model;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
 public class Schedule
 {
-	private Date date;
-	private List<Member> members = new ArrayList<>(0);
+	private Calendar date;
 	private String remarks;
+	private List<Member> members = new ArrayList<>(0);
+	
+	public Schedule(){}
+	
+	public Schedule(Calendar date, String remarks, List<Member> members)
+	{
+		super();
+		this.date = date;
+		this.remarks = remarks;
+		this.members = members;
+	}
 
-	public Date getDate()
+	public Calendar getDate()
 	{
 		return date;
 	}
 
-	public void setDate(Date date)
+	public void setDate(Calendar date)
 	{
 		this.date = date;
 	}
