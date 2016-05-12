@@ -14,7 +14,7 @@
 	<!-- the application context definition for the springapp DispatcherServlet -->
 	<mvc:annotation-driven />
 	<context:annotation-config />
-	<context:component-scan base-package="org.irm.sched" />
+	<context:component-scan base-package="org.irm.sched.controller" />
 	
 	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
 	
@@ -29,6 +29,9 @@
 	<mvc:cors>
 		<mvc:mapping path="/**" />
 	</mvc:cors>
+	
+	<bean class="org.irm.sched.tool.SwaggerConfig"/>
+	<bean class="org.irm.sched.tool.WebAppConfig"/>
 	
 
 </beans>

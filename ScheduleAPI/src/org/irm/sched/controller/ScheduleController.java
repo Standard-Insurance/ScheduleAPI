@@ -45,7 +45,7 @@ public class ScheduleController
 		list.add(new Member("Kevin Hubilla", "Lead Guitar"));
 		list.add(new Member("Renz Corbito", "Drummer"));
 		list.add(new Member("JM Javier", "Keyboard"));
-		list.add(new Member("JP Ibañez", "Bass Guitar")); 
+		list.add(new Member("JP IbaÃ±ez", "Bass Guitar"));
 		
 		return list;
 	}

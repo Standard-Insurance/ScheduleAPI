@@ -49,15 +49,15 @@ public class ScheduleTest
 				.andExpect(status().isOk())
 				.andExpect(jsonPath("$.[0].remarks").value("Don't be late!"))
 				.andReturn();
-		String content = result.getResponse().getContentAsString();
-		System.out.println(content);
-		
-		ObjectMapper mapper = new ObjectMapper();
-		List<Schedule> list = Arrays.asList(mapper.readValue(content, Schedule[].class));
-		for(Schedule sched : list)
-		{
-			System.out.println(sched.getRemarks());
-		}
+//		String content = result.getResponse().getContentAsString();
+//		System.out.println(content);
+//		
+//		ObjectMapper mapper = new ObjectMapper();
+//		List<Schedule> list = Arrays.asList(mapper.readValue(content, Schedule[].class));
+//		for(Schedule sched : list)
+//		{
+//			System.out.println(sched.getRemarks());
+//		}
 	}
 
 }
